@@ -11,8 +11,8 @@ function App() {
 
         <div className='main-div w-full my-0 mx-auto'>
 
-          {/* card 1 */}
-          <div className='signin p-10'>
+          {/* card 1 start*/}
+          <div className='signin p-5 lg:p-10 md:p-10 sm:p-5'>
 
             <div className='grid justify-center mb-5'>
               <ImWindows />
@@ -23,7 +23,7 @@ function App() {
               <small>Start your 30 day free trial</small>
             </div>
 
-            <button className='flex items-center gap-2 rounded-full border px-2 py-1 w-full justify-center font-bold'>
+            <button className='px-2 py-1 mb-3 flex items-center gap-2 rounded-full border w-full justify-center font-bold sm:text-sm'>
               <FcGoogle /> Sign up with Google
             </button>
 
@@ -41,7 +41,7 @@ function App() {
                 <input className='rounded-full border px-2 py-1 w-full' type="email" placeholder='you@domain.com' />
               </div>
 
-              <div>
+              <div className='mb-3'>
                 <label htmlFor="">Password</label>
                 <br />
                 <input className='rounded-full border px-2 py-1 w-full' type="password" placeholder='*********' />
@@ -50,14 +50,14 @@ function App() {
 
               <button className='rounded-full border px-2 py-1 w-full bg-blue-700 text-white'>Create account</button>
 
-              <p className='text-center mt-2'>Been here before? <a className='font-bold' href="@">Log in</a></p>
+              <p className='text-center mt-2 sm:text-sm'>Been here before? <a className='font-bold' href="@">Log in</a></p>
 
             </form>
 
-            <div className='flex justify-between mt-5'>
+            <div className='flex lg:flex-row md:flex-row sm:flex-col sm:items-center justify-between mt-5'>
               <p>&copy; 2022 Rejiggle</p>
 
-              <div className='flex gap-3'>
+              <div className='flex lg:flex-row md:flex-row sm:flex-col lg:gap-3 md:gap-3 sm:gap-0'>
                 <a href='@'>Terms</a>
                 <a href='@'>Privacy</a>
               </div>
@@ -66,9 +66,9 @@ function App() {
 
           </div>
 
-          {/* Card 2 */}
+          {/* Card 2 start*/}
 
-          <div className='signin-details p-10'>
+          <div className='signin-details p-5 lg:p-10 md:p-10 sm:p-5'>
 
             <div>
 
@@ -76,12 +76,14 @@ function App() {
                 <IoLogoFigma />
               </div>
 
-              <h1 className='lg:text-5xl lg:w-96 md:w-96 sm:w-60 sm:text-3xl font-bold'>Save thousand of design hours</h1>
+              <h1 className='font-bold lg:text-5xl lg:w-96 md:w-48 sm:w-48 sm:text-2xl'>Save thousand of design hours</h1>
 
-              <p className='opacity-70'>Join thousands of designers and mockup high-quality landing pages in minutes</p>
+              <p className='opacity-70 mt-5
+              lg:w-96 lg:text-base md:w-52 md:text-base 
+              sm:w-48 sm:text-sm'>Join thousands of designers and mockup high-quality landing pages in minutes</p>
             </div>
 
-            <div className='flex gap-3 mt-4'>
+            <div className='lg:flex lg:flex-row md:flex md:flex-row md:items-center sm:flex sm:flex-col sm:items-center gap-3 mt-4'>
               <div className='flex'>
                 <img className='w-[20px] h-[20px] rounded-full' src={Profile} alt="This is a profile" />
                 <img className='w-[20px] h-[20px] rounded-full -ml-2' src={Profile} alt="This is a profile" />
